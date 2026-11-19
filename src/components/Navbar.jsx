@@ -30,7 +30,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? 'bg-void/70 backdrop-blur-md border-b border-line' : ''}`}>
+    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/[0.02] backdrop-blur-md border-b border-white/10' : 'bg-transparent'}`}>
       <nav className="max-w-[1600px] mx-auto px-5 md:px-10 xl:px-16 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 font-display font-bold text-chrome tracking-widest">
           <span className="flex gap-0.5">
@@ -67,7 +67,7 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile menu */}
-      <div className={`md:hidden overflow-hidden transition-all duration-300 bg-void/95 backdrop-blur-md ${open ? 'max-h-96 border-b border-line' : 'max-h-0'}`}>
+      <div className={`md:hidden overflow-hidden transition-all duration-300 bg-void/60 backdrop-blur-xl ${open ? 'max-h-96 border-b border-line' : 'max-h-0'}`}>
         <ul className="px-5 py-4 space-y-3 text-sm tracking-[0.2em]">
           {LINKS.map(([id, label], i) => (
             <li key={id}>
