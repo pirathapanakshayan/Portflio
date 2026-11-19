@@ -6,7 +6,7 @@ export default function Hero() {
 
   return (
     <section id="top" className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-5 md:px-8 w-full grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+      <div className="max-w-[1600px] mx-auto px-5 md:px-10 xl:px-16 w-full grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
         {/* ---------- Left: text ---------- */}
         <div className="reveal">
           <div className="flex flex-wrap items-center gap-3 text-[11px] sm:text-xs tracking-[0.2em] sm:tracking-[0.25em] text-silver mb-6">
@@ -16,10 +16,10 @@ export default function Hero() {
           </div>
 
           <h1 className="font-display font-bold leading-none">
-            <span className="shine block text-5xl sm:text-7xl md:text-8xl tracking-wide animate-glitch">{profile.name}</span>
+            <span className="shine block text-5xl sm:text-7xl md:text-8xl 2xl:text-9xl tracking-wide animate-glitch">{profile.name}</span>
             <span className="mt-3 flex items-center gap-4">
               <span className="hazard w-14 h-7 shrink-0" />
-              <span className="text-hud text-2xl sm:text-4xl tracking-[0.35em]">{profile.surname}</span>
+              <span className="text-hud text-2xl sm:text-4xl 2xl:text-5xl tracking-[0.35em]">{profile.surname}</span>
             </span>
           </h1>
 
@@ -27,7 +27,7 @@ export default function Hero() {
             <span className="text-hud">&gt; </span>{typed}<span className="inline-block w-2.5 h-5 align-middle bg-hud ml-1 animate-blink" />
           </p>
 
-          <p className="mt-5 max-w-xl text-silver leading-relaxed">{profile.tagline}</p>
+          <p className="mt-5 max-w-xl 2xl:max-w-2xl 2xl:text-lg text-silver leading-relaxed">{profile.tagline}</p>
 
           <div className="mt-9 flex flex-wrap gap-4">
             <Button href="#contact">[ HIRE ME ]</Button>
@@ -51,7 +51,7 @@ export default function Hero() {
         </div>
 
         {/* ---------- Right: portrait ---------- */}
-        <div className="reveal relative mx-auto w-full max-w-[460px] aspect-square">
+        <div className="reveal relative mx-auto w-full max-w-[560px] aspect-square">
           <div className="absolute inset-[6%] rounded-full bg-hud/20 blur-3xl animate-pulse-glow" />
           <svg viewBox="0 0 400 400" className="absolute inset-0 w-full h-full">
             <g className="animate-spin-slow" style={{ transformOrigin: '200px 200px' }}>

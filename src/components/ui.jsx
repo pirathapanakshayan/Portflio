@@ -33,7 +33,7 @@ export function SectionTitle({ num, title, tag }) {
 
 export function Section({ id, children, className = '' }) {
   return (
-    <section id={id} className={`relative max-w-6xl mx-auto px-5 md:px-8 py-24 ${className}`}>
+    <section id={id} className={`relative max-w-[1600px] mx-auto px-5 md:px-10 xl:px-16 py-24 ${className}`}>
       {children}
     </section>
   )
