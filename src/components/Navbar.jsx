@@ -30,7 +30,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/[0.02] backdrop-blur-md border-b border-white/10' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-transparent`}>
       <nav className="max-w-[1600px] mx-auto px-5 md:px-10 xl:px-16 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 font-display font-bold text-chrome tracking-widest">
           <span className="flex gap-0.5">
