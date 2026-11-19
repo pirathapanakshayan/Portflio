@@ -76,9 +76,19 @@ export const projects = [
     tags: ['Python', 'Pandas', 'Matplotlib', 'pytest'],
     filter: 'Python',
     image: asset('img/book-publication-trends.webp'),
+    invert: true, // dark-mode the white chart image
     text: 'CLI app that loads, validates and cleans ~3,900 books, then delivers six analyses with tables and charts. Built with OOP, SOLID and the Strategy, Factory and Template Method patterns — covered by 22 automated tests.',
     repo: 'https://github.com/pirathapanakshayan/Dream_Book_Shop',
     featured: true,
+  },
+  {
+    title: 'ETCP — Eco Tourism Platform',
+    kind: 'UI/UX Design · 90+ Screens',
+    tags: ['Figma', 'UI/UX', 'Responsive'],
+    filter: 'UI/UX',
+    image: asset('img/eco-tourism.webp'),
+    text: 'Full UI/UX design for a sustainable travel platform in Sri Lanka — traveller, provider and admin experiences on desktop and mobile, with eco-impact tracking and an Eco-Pass membership.',
+    repo: 'https://github.com/pirathapanakshayan/Eco-Tourism-Cloud-Platform',
   },
   {
     title: 'Doctor Channelling System',

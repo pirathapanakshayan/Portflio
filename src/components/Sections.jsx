@@ -121,7 +121,7 @@ export function Skills() {
 }
 
 /* ============================ 04 PROJECTS ============================ */
-const FILTERS = ['All', 'Python', 'Java', 'C#', 'Web']
+const FILTERS = ['All', 'Python', 'Java', 'C#', 'Web', 'UI/UX']
 
 export function Projects() {
   const [filter, setFilter] = useState('All')
@@ -149,7 +149,7 @@ export function Projects() {
             {/* visual */}
             <div className="relative h-44 border-b border-line overflow-hidden bg-panel">
               {p.image ? (
-                <img src={p.image} alt={p.title} className="w-full h-full object-cover object-top grayscale invert brightness-90 contrast-125 opacity-80 hover:opacity-100 transition duration-500" />
+                <img src={p.image} alt={p.title} className={`w-full h-full object-cover object-top transition duration-500 ${p.invert ? 'grayscale invert brightness-90 contrast-125 opacity-80 hover:opacity-100' : 'opacity-90 hover:opacity-100 hover:scale-105'}`} />
               ) : (
                 <div className="w-full h-full grid place-items-center relative">
                   <div className="absolute inset-0 opacity-40" style={{ backgroundImage: 'radial-gradient(#3a3a3a 1px, transparent 1px)', backgroundSize: '14px 14px' }} />
