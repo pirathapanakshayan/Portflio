@@ -25,7 +25,6 @@ export default function App() {
     <>
       {!booted && <Boot onDone={done} />}
       <Cursor />
-      <div className="scanline" />
       <Navbar />
       <main>
         <Hero />
