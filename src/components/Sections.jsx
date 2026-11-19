@@ -16,9 +16,10 @@ export function About() {
           </div>
         </div>
 
-        <div className="reveal relative glass cut p-7">
+        <div className="reveal relative glass cut p-7 flex flex-col sm:flex-row gap-7 sm:items-center">
           <Brackets />
-          <ul className="space-y-4 text-sm">
+          {/* left: info rows */}
+          <ul className="flex-1 space-y-4 text-sm">
             {about.info.map(([k, v]) => (
               <li key={k} className="flex gap-3">
                 <span className="w-20 shrink-0 text-hud">{k}</span>
@@ -30,18 +31,23 @@ export function About() {
               </li>
             ))}
           </ul>
-          <div className="mt-7 h-px bg-line" />
-          <div className="mt-5 flex items-center gap-4">
-            <div className="relative w-16 h-16 overflow-hidden border border-line">
-              <img src={asset('img/cyborg.webp')} alt="" className="w-full h-full object-cover object-[50%_28%] scale-[2.3]" />
-              <span className="absolute inset-x-0 h-4 bg-gradient-to-b from-transparent to-hud/40" style={{ animation: 'face 2.4s ease-in-out infinite alternate' }} />
+
+          {/* right: face scanner */}
+          <div className="shrink-0 w-44 mx-auto sm:mx-0 xl:w-52">
+            <div className="relative aspect-square overflow-hidden border border-line">
+              <img src={asset('img/face.webp')} alt="Pirathapan Akshayan" className="w-full h-full object-cover" />
+              <span className="absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-transparent to-hud/45 border-b border-hud" style={{ animation: 'face 2.6s ease-in-out infinite alternate' }} />
+              <span className="absolute left-1.5 top-1.5 w-4 h-4 border-t-2 border-l-2 border-hud" />
+              <span className="absolute right-1.5 top-1.5 w-4 h-4 border-t-2 border-r-2 border-hud" />
+              <span className="absolute left-1.5 bottom-1.5 w-4 h-4 border-b-2 border-l-2 border-hud" />
+              <span className="absolute right-1.5 bottom-1.5 w-4 h-4 border-b-2 border-r-2 border-hud" />
             </div>
-            <div className="text-xs">
+            <div className="mt-3 text-[11px] leading-5">
               <div className="text-silver">IDENTITY : <span className="text-hud">VERIFIED</span></div>
-              <div className="text-dim mt-1">SCAN : COMPLETE</div>
+              <div className="text-dim">SCAN : COMPLETE</div>
             </div>
           </div>
-          <style>{'@keyframes face{from{top:-16px}to{top:64px}}'}</style>
+          <style>{'@keyframes face{from{transform:translateY(-100%)}to{transform:translateY(400%)}}'}</style>
         </div>
       </div>
     </Section>
