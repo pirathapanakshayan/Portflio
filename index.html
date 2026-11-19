@@ -2,17 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== Security ===== -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://raw.githubusercontent.com; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- ===== SEO ===== -->
+    <title>Pirathapan Akshayan | Freelance Software Developer · Sri Lanka</title>
+    <meta name="description" content="Pirathapan Akshayan (Akshayan Pirathapan) — freelance software developer from Jaffna, Sri Lanka. Desktop apps, websites, data tools and databases with C#, Java, Python, React and SQL. Learning AI & Cybersecurity." />
+    <meta name="author" content="Pirathapan Akshayan" />
+    <meta name="keywords" content="Pirathapan Akshayan, Akshayan Pirathapan, Akshayan, Pirathapan, freelance software developer Sri Lanka, Jaffna developer, C# developer, Java, Python, React portfolio" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://pirathapanakshayan.github.io/Portflio/" />
     <meta name="theme-color" content="#050505" />
-    <title>Pirathapan Akshayan · Freelance Software Developer</title>
-    <meta name="description" content="Pirathapan Akshayan — freelance software developer from Sri Lanka building desktop apps, websites and data tools with C#, Java, Python and SQL. Learning AI & Cybersecurity." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Social share preview (WhatsApp, LinkedIn, Facebook, X) -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Pirathapan Akshayan" />
     <meta property="og:title" content="Pirathapan Akshayan · Freelance Software Developer" />
-    <meta property="og:description" content="Desktop apps · Websites · Data tools — now leveling up into AI & Cybersecurity." />
-    <meta property="og:image" content="https://pirathapanakshayan.github.io/Portflio/img/cyborg.webp" />
+    <meta property="og:description" content="Desktop apps · Websites · Data tools — C#, Java, Python, React & SQL. Now leveling up into AI & Cybersecurity." />
+    <meta property="og:url" content="https://pirathapanakshayan.github.io/Portflio/" />
+    <meta property="og:image" content="https://pirathapanakshayan.github.io/Portflio/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pirathapan Akshayan — Freelance Software Developer" />
+    <meta property="profile:first_name" content="Pirathapan" />
+    <meta property="profile:last_name" content="Akshayan" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pirathapan Akshayan · Freelance Software Developer" />
+    <meta name="twitter:description" content="Desktop apps · Websites · Data tools — now leveling up into AI & Cybersecurity." />
+    <meta name="twitter:image" content="https://pirathapanakshayan.github.io/Portflio/og-image.jpg" />
+
+    <!-- Google Search Console verification: paste your tag below -->
+    <!-- <meta name="google-site-verification" content="PASTE_CODE_HERE" /> -->
+
+    <!-- Structured data: tells Google who this site is about -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://pirathapanakshayan.github.io/Portflio/",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Pirathapan Akshayan",
+          "alternateName": ["Akshayan Pirathapan", "Akshayan", "pirathapanakshayan"],
+          "jobTitle": "Freelance Software Developer",
+          "url": "https://pirathapanakshayan.github.io/Portflio/",
+          "image": "https://pirathapanakshayan.github.io/Portflio/og-image.jpg",
+          "address": { "@type": "PostalAddress", "addressLocality": "Jaffna", "addressCountry": "LK" },
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "ESOFT UNI" },
+          "knowsAbout": ["Software Development", "C#", "Java", "Python", "React", "SQL", "Artificial Intelligence", "Cybersecurity"],
+          "sameAs": [
+            "https://github.com/pirathapanakshayan",
+            "https://www.linkedin.com/in/pirathapanakshayan"
+          ]
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <h1>Pirathapan Akshayan — Freelance Software Developer</h1>
+      <p>Freelance software developer from Jaffna, Sri Lanka, building desktop apps, websites, data tools and databases with C#, Java, Python, React and SQL. HND in Software Engineering (ESOFT UNI). Learning AI &amp; Cybersecurity.</p>
+      <p><a href="https://github.com/pirathapanakshayan">GitHub</a> · <a href="https://www.linkedin.com/in/pirathapanakshayan">LinkedIn</a> · <a href="mailto:pirathapanakshayan@gmail.com">Email</a></p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

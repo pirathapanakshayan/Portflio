@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pirathapanakshayan.github.io/Portflio/sitemap.xml
