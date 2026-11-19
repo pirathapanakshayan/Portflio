@@ -73,14 +73,27 @@ export default function Hero() {
             className="absolute inset-0 w-full h-full object-contain animate-float drop-shadow-[0_0_30px_rgba(255,214,0,0.15)]"
           />
 
-          {/* ID tag */}
-          <div className="glass cut absolute -left-2 sm:-left-8 bottom-10 px-4 py-3 text-[11px] leading-5">
+          {/* CV: QR + download (left) */}
+          {profile.cv && (
+            <div className="cut absolute -left-2 sm:-left-8 bottom-6 p-3 w-32 sm:w-36 text-center bg-void/85 border border-silver/20">
+              <Brackets size="w-2 h-2" />
+              <p className="text-[10px] tracking-[0.2em] text-dim mb-2">SCAN // <span className="text-hud">CV</span></p>
+              <img src={asset('img/cv-qr.svg')} alt="QR code to download my CV" className="w-full aspect-square" />
+              <a href={profile.cv} download="Pirathapan_Akshayan_CV.pdf"
+                className="cut mt-2 block bg-hud text-void font-display font-bold text-[11px] tracking-[0.15em] py-1.5 hover:bg-chrome transition">
+                DOWNLOAD CV
+              </a>
+            </div>
+          )}
+
+          {/* ID tag (bottom right) */}
+          <div className="cut absolute -right-2 sm:-right-6 bottom-10 px-4 py-3 text-[11px] leading-5 bg-void/85 border border-silver/20">
             <Brackets size="w-2 h-2" />
             <div className="text-dim">ID : A2026_X17</div>
             <div className="text-silver">CLASS : <span className="text-hud">FREELANCER</span></div>
             <div className="text-silver">CORE : C# · JAVA · PYTHON</div>
           </div>
-          <div className="glass cut absolute -right-2 sm:-right-6 top-10 px-4 py-3 text-[11px]">
+          <div className="cut absolute -right-2 sm:-right-6 top-10 px-4 py-3 text-[11px] bg-void/85 border border-silver/20">
             <div className="flex items-center gap-2 text-silver">
               <span className="w-2 h-2 rounded-full bg-hud animate-blink" /> DATA STREAM
             </div>
