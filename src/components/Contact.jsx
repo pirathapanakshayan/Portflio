@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { profile } from '../data'
+import { profile, asset } from '../data'
 import { Brackets, Section, SectionTitle } from './ui'
 import Icon from './Icon'
 
@@ -47,6 +47,27 @@ export function Contact() {
               </a>
             ))}
           </div>
+
+          {/* CV: scan the QR or press the button */}
+          {profile.cv && (
+            <div className="relative glass cut mt-6 p-6 flex flex-col items-center text-center">
+              <Brackets size="w-3 h-3" />
+              <p className="self-start text-[11px] tracking-[0.25em] text-dim mb-5">
+                RESUME // <span className="text-hud">CV.PDF</span>
+              </p>
+              <div className="relative p-2 border border-hud/40">
+                <img src={asset('img/cv-qr.svg')} alt="QR code to download my CV" className="w-40 h-40" />
+              </div>
+              <p className="mt-3 text-[11px] text-dim">SCAN WITH YOUR PHONE</p>
+              <div className="my-4 flex items-center gap-3 w-full text-[10px] text-dim">
+                <span className="flex-1 h-px bg-line" /> OR <span className="flex-1 h-px bg-line" />
+              </div>
+              <a href={profile.cv} download="Pirathapan_Akshayan_CV.pdf"
+                className="cut w-full inline-flex items-center justify-center gap-2 bg-hud text-void font-display font-bold tracking-[0.25em] py-3 hover:bg-chrome transition">
+                [ DOWNLOAD CV ]
+              </a>
+            </div>
+          )}
         </div>
 
         <form onSubmit={submit} className="reveal relative glass cut p-7 md:p-9 space-y-5">
