@@ -11,7 +11,7 @@ export const profile = {
   github: 'https://github.com/pirathapanakshayan',
   githubUser: 'pirathapanakshayan',
   linkedin: 'https://www.linkedin.com/in/pirathapanakshayan',
-  cv: null, // put your CV in /public/cv.pdf and change this to asset('cv.pdf')
+  cv: asset('cv.pdf'), // replace /public/cv.pdf to update the CV
   typing: [
     'Freelance Software Developer',
     'Desktop · Web · Data Solutions',
